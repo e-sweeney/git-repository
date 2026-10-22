@@ -16,6 +16,7 @@ jobs:
       run: echo "Hello from windows"
   job3:
     name: job3
+    Needs: [job1, job2]
     runs-on: ubuntu-latest
     steps:
     - name: step3
